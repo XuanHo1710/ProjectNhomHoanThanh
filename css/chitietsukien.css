@@ -1,0 +1,65 @@
+#detail-top{
+    margin-top: 61px;
+    height: 200px;
+    background-color: black;
+}
+
+#detail-img{
+    height: 645px;
+    background-image: url(https://images.acer.com/is/image/acer/2024_IEM_AGW_Landing_Page_Banner_2560x1080?$responsive$);
+    background-size: 100%;
+}
+
+#detail-img h1,#detail-img p{
+    color: white;
+    max-width: 50%;
+    margin-left: 100px;
+    text-align: justify;
+}
+
+#detail-cen{
+    background-color: black;
+    color: white;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon{
+    background-color: black;
+    border-radius: 50%;
+}
+
+#overview h4{
+    margin-top: 20px;
+    text-align: justify;
+    max-width: 80%;
+}
+
+#detail-bot{
+    background-color: black;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+#detail-bot h1,#detail-bot p{
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    text-align: justify;
+    margin-left: 100px;
+    margin-bottom: 20px;
+}
+
+#detail-bot div{
+    padding-top: 100px;
+}
+
+#btn-prod button{
+    background-color: transparent;
+    color: white;
+    border: none;
+    
+    width: 290px;
+}
+
+#btn-prod button:hover{
+    border-right: 4px solid #9de6f8;
+    border-left: 4px solid #9de6f8;
+}

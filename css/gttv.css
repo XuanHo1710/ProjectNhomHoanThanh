@@ -1,0 +1,32 @@
+.card-gttv > .d-flex > p:first-child {
+    min-width: 110px;
+}
+
+.card-addCss {
+    color: #fff;
+    background-color: transparent;
+    outline: 1px solid #fff;
+    box-shadow: 0 0 5px #0050fc;
+}
+
+.wrap__login-icon {
+    display: flex;
+    align-items: center;
+}
+
+.wrap__login-icon > a {
+    text-decoration: none;
+    color: #fff;
+    padding: 5px;
+}
+
+.wrap__login-icon > a:hover > i {
+    font-size: 28px;
+    opacity: 1;
+}
+
+.wrap__login-icon > a > i {
+    font-size: 26px;
+    opacity: 0.7;
+}
+

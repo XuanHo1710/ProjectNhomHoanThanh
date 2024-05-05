@@ -1,0 +1,384 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+p {
+    margin: 0;
+}
+
+::-webkit-scrollbar {
+    display: none;
+    /* background-color: #000; */
+    /* width: 6px; */
+}
+
+/* ::-webkit-scrollbar-thumb {
+    background-color: #dfdfdf;
+    border-radius: 3px;
+} */
+
+/* Navigation */
+nav.navbar {
+    background-color: #000;
+}
+.form-control:focus {
+    border-color: #fff;
+    box-shadow: none;
+}
+
+.navbar-collapse {
+    flex-grow: unset;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    text-transform: uppercase;
+    font-size: 15px;
+    padding: 20px 15px;
+    font-weight: 700;
+}
+
+.nav-item:hover > a.nav-link {
+    background-color: #fff;
+    color: #000;
+}
+
+
+.wrap__item-notify-nav h6{
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    height: 20px;
+    overflow: hidden;
+}
+
+.wrap__icon-item {
+    display: flex;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+    align-items: center;
+    min-width: 100px;
+    text-decoration: none;
+}
+
+
+/* phần hover vô thông báo */
+
+.wrap__list-notify-nav {
+    display: none;
+    position: absolute;
+    width: 400px;
+    min-height: 200px;
+    top: 64px;
+    right: 165px;
+    border-radius: 5px;
+    color: #000;
+    animation: bottomToTop ease-out 0.12s;
+    background-color: white;
+    box-shadow: 0 0 5px 1px #dadada;
+}
+
+.wrap__list-notify-nav::before {
+    content: "";
+    position: absolute;
+    width: 50%;
+    left: 0;
+    top: -28px;
+    height: 30px;
+}
+
+.wrap__icon-item:hover > .wrap__list-notify-nav {
+    display: block;
+}
+
+@keyframes bottomToTop {
+    0% {
+        opacity: 0;
+        top: 90px;
+    }
+    25%{
+        opacity: 0.3;
+        top: 80;
+    }
+    75% {
+        opacity: 0.5;
+        top: 70px;
+    }
+    100% {
+        opacity: 1;
+        top: 64px;
+    }
+}
+
+.wrap__notify-nav-body {
+    overflow-y: scroll;
+    max-height: 350px;
+    min-height: 100px;
+}
+
+.wrap__notify-nav-body::-webkit-scrollbar {
+    display: none;
+}
+
+.wrap__item-notify-nav {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #dadada;
+}
+
+.wrap__item-notify-nav:hover {
+    box-shadow: 0 0 3px 1px #dadada;
+    background-color: #efefef;
+}
+
+.wrap__notify-nav-header {
+    border-bottom: 1px solid #dadada;
+}
+
+h6 {
+    margin-bottom: 0;
+}
+
+
+/* kết thúc của hover vô thông báo  */
+
+.block-item-user {
+    display: block;
+    opacity: 0.9;
+    border-radius: 50%;
+    background-color: #525252;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+}
+
+.block-item-user:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+
+
+/* SUBnav  */
+.wrap__subnav {
+    display: none;
+    min-width: 200px;
+    box-shadow: 0 0 5px 1px #dadada;
+    position: absolute;
+    animation: bottomToTop ease-out 0.2s;
+}
+
+.nav-item:hover .wrap__subnav {
+    display: block;
+}
+
+.wrap__subnav > li {
+    list-style: none;
+}
+
+.wrap__subnav > li:hover {
+    background-color: #efefef;
+}
+
+.block-subnav__info {
+    display: flex;
+    padding: 5px 10px;
+    align-items: center;
+}
+
+.block-subnav__info > a {
+    text-decoration: none;
+    color: #000;
+}
+
+.block-subnav__info > i {
+    font-size: 24px;
+}
+
+.block-subnav__link {
+    display: block;
+    text-decoration: none;
+    color: #000;
+    width: 100%;
+    font-size: 18px;
+    margin-left: 0.8rem;
+}
+
+.block-subnav__link:hover {
+    color: #fd853c;
+}
+
+
+/* Thẻ trả về kết quả tìm kiếm */
+
+.input-group-result.show{
+    display: block;
+}
+
+
+.input-group-result{
+    display: none;
+    background-color: #fff;
+    box-shadow: 0 0 5px 1px #dadada;
+    width: 400px;
+    position: absolute;
+    top: 51px;
+    right: 0;
+    max-height: 400px;
+    min-height: 50px;
+    overflow-y: scroll;
+}
+
+.input-group-result-item:hover{
+    background-color: #dadada;
+    transition: background-color .3s linear;
+}
+
+
+.input-group-result-item{
+    height: 100px;
+    padding: 20px;
+    text-decoration: none;
+    background-color: #fff;
+    align-items: center; 
+    transition: background-color .3s linear;
+}
+
+.input-group-result-item img{
+    width: 20%;
+    margin-right: 10px;
+    height: 60px;
+}
+
+.input-group-result-detail{
+    width: 80%;
+    text-align: left;
+}
+
+.input-group-result-detail h5{
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    height: 18px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+/* Hết trả về kết quả tìm kiếm */
+
+/* End Navigation */
+
+
+/* hotline zalo  */
+.btn__hotline-zalo {
+    text-decoration: none;
+    display: block;
+    position: fixed;
+    animation: ring 2s infinite;
+    bottom: 130px;
+    right: 50px;
+    border-radius: 50%;
+}
+
+.btn__img-zalo {
+    width: 50px;
+    height: 50px;
+}
+
+@keyframes ring {
+    0% { 
+        box-shadow: 0 0 0 3px rgb(88, 152, 249);
+        /* transform: rotate(0deg);  */
+        transform: scale(0.85);
+    }
+    75% { 
+        box-shadow: 0 0 3px 3px rgb(255, 255, 255);
+        /* transform: rotate(25deg);  */
+        transform: scale(0.95);
+    }
+    100% { 
+        box-shadow: 0 0 3px 3px rgb(255, 255, 255);
+        /* transform: rotate(0deg);  */
+        transform: scale(0.85);
+    }
+  }
+
+
+/* end  */
+/* Footer */
+.row>* {
+    padding-right: 2px;
+    padding-left: 2px;
+}
+
+footer {
+    overflow: hidden;
+    background-color: #000;
+}
+
+.footer__title {
+    color: #fff;
+}
+.footer-list-info {
+    text-align: start;
+
+}
+
+.footer__item {
+    list-style: none;
+}
+
+.footer__link-item {
+    text-decoration: none;
+    color: #fff;
+}
+
+.footer__link-item:hover {
+    color: #fd853c;
+}
+
+
+.footer__img-item {
+    max-width: 100%;
+}
+
+.footer__wrap-media a {
+    text-decoration: none;
+}
+
+.footer__wrap-link-media {
+    display: inline-block;
+    height: 100%;
+}
+
+.footer__icon-media  {
+    font-size: 40px;
+    margin: 10px;
+    color: #fff;
+}
+
+.footer__icon-media:hover {
+    transform: scale(1.1);
+}
+
+
+
+ul {
+    padding-left: 0;
+}
+/* End Footer */
+
+
+
+
+
+
+
+
+
+

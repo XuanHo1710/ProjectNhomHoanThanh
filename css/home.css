@@ -1,0 +1,517 @@
+/* Animation */
+@keyframes slideInFromLeft {
+  from {
+    transform: translateX(-100%);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes floatEffect {
+  0% {
+    transform: translateY(0);
+    /* Phần tử không thay đổi vị trí ban đầu */
+  }
+
+  50% {
+    transform: translateY(-20px);
+    /* Di chuyển phần tử lên trên */
+  }
+
+  100% {
+    transform: translateY(0);
+    /* Trở về vị trí ban đầu */
+  }
+}
+
+@keyframes floatEffect1 {
+  0% {
+    transform: translateY(-20px);
+    /* Phần tử không thay đổi vị trí ban đầu */
+  }
+
+  50% {
+    transform: translateY(0px);
+    /* Di chuyển phần tử lên trên */
+  }
+
+  100% {
+    transform: translateY(-20px);
+    /* Trở về vị trí ban đầu */
+  }
+}
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+.home-subnav{
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+
+.subnav-list {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 90%;
+  padding: 0;
+}
+
+.subnav-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  outline: 1px solid #dadada;
+  font-size: 14px;
+  color: #000;
+  cursor: pointer;
+}
+
+.subnav-item p {
+  line-height: 18px;
+}
+
+  .subnav-item:hover{
+     box-shadow: 0 0 5px #c3c3c3;
+  }
+
+.hot-laptop .title {
+  display: flex;
+  align-items: center;
+  color: rgb(214, 25, 25);
+  padding: 16px;
+}
+
+.hot-laptop .title i {
+  font-size: 40px;
+
+  margin-right: 8px;
+}
+
+.hot-laptop .title h3 {
+  position: relative;
+  top: 2px
+}
+
+
+
+
+
+.card-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+
+/* test */
+.container- {
+
+  height: 300px;
+  width: 100%;
+  top: 60px;
+  left: calc(50% - 300px);
+  display: flex;
+}
+
+.card- {
+  display: flex;
+  height: 280px;
+  width: 200px;
+  background-color: #17141d;
+  border-radius: 10px;
+  box-shadow: -1rem 0 3rem #000;
+  /*   margin-left: -50px; */
+  transition: 0.4s ease-out;
+  position: relative;
+  left: 0px;
+  margin-top: 32px;
+  animation: slideInFromLeft 0.5s ease-out forwards;
+}
+
+.card-:not(:first-child) {
+  margin-left: 20px;
+}
+
+.card-:hover {
+  transform: translateY(-20px);
+  transition: 0.4s ease-out;
+}
+
+.card-:hover~.card {
+  position: relative;
+  left: 50px;
+  transition: 0.4s ease-out;
+}
+
+.title- {
+  color: white;
+  font-weight: 300;
+  position: absolute;
+  left: 20px;
+  top: 15px;
+}
+
+.bar {
+  position: absolute;
+  top: 100px;
+  left: 20px;
+  height: 5px;
+  width: 150px;
+}
+
+.emptybar {
+  background-color: #2e3033;
+  width: 100%;
+  height: 100%;
+}
+
+.filledbar {
+  position: absolute;
+  top: 0px;
+  z-index: 3;
+  width: 0px;
+  height: 100%;
+  background: rgb(0, 154, 217);
+  background: linear-gradient(90deg, rgba(0, 154, 217, 1) 0%, rgba(217, 147, 0, 1) 65%, rgba(255, 186, 0, 1) 100%);
+  transition: 0.6s ease-out;
+}
+
+.card-:hover .filledbar {
+  width: 120px;
+  transition: 0.4s ease-out;
+}
+
+.circle {
+  position: absolute;
+  top: 150px;
+  left: calc(50% - 60px);
+}
+
+.stroke {
+  stroke: white;
+  stroke-dasharray: 360;
+  stroke-dashoffset: 360;
+  transition: 0.6s ease-out;
+}
+
+svg {
+  fill: #17141d;
+  stroke-width: 2px;
+}
+
+.card-:hover .stroke {
+  stroke-dashoffset: 100;
+  transition: 0.6s ease-out;
+}
+
+/* content-logo */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap");
+
+
+
+.wrap-content-logo {
+  height: 100px;
+  display: grid;
+  place-items: center;
+
+  --bkg: #5eb3fd;
+  --white: #e7e6e6;
+
+  background-color: var(--white);
+  background-image: url("https://www.transparenttextures.com/patterns/concrete-wall.png");
+}
+
+.content-logo {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.content-logo .title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.content-logo .title h1 {
+  font-size: 70px;
+  letter-spacing: 80px;
+  font-weight: 900;
+  font-family: Montserrat, sans-serif;
+  color: black;
+}
+
+.content-logo .ghost {
+  width: 8vmin;
+  height: 12vmin;
+  background-color: var(--white);
+  background-image: url("https://www.transparenttextures.com/patterns/concrete-wall.png");
+  background-image: radial-gradient(ellipse at 35% 40%, #000 8%, transparent 0%),
+    radial-gradient(ellipse at 65% 40%, #000 8%, transparent 0%),
+    radial-gradient(ellipse at 50% 60%, #000 8%, transparent 0%);
+  border-radius: 100% / 70% 70% 0% 0%;
+  transform: translateX(100em) rotateZ(-90deg);
+  position: relative;
+  opacity: 0.9;
+  mix-blend-mode: exclusion;
+  animation: ghostMove 4s ease-out infinite;
+}
+
+@keyframes ghostMove {
+  0% {
+    transform: translateX(30em) rotateZ(-90deg);
+  }
+
+  100% {
+    transform: translateX(-35em) rotateZ(-90deg);
+  }
+}
+
+.content-logo .ghost div {
+  position: absolute;
+  width: 20%;
+  background-color: var(--white);
+  background-image: url("https://www.transparenttextures.com/patterns/concrete-wall.png");
+}
+
+.content-logo .ghost div:nth-of-type(1) {
+  height: 7vmin;
+  left: 0;
+  bottom: -6vmin;
+  border-radius: 100% / 0% 0% 50% 50%;
+}
+
+.content-logo .ghost div:nth-of-type(2),
+.content-logo .ghost div:nth-of-type(4) {
+  height: 4vmin;
+  left: 20%;
+  bottom: -3vmin;
+  border-radius: 100% / 50% 50% 0% 0%;
+  background-color: transparent;
+}
+
+.content-logo .ghost div:nth-of-type(3) {
+  height: 4vmin;
+  left: 40%;
+  bottom: -3.95vmin;
+  border-radius: 100% / 0% 0% 60% 60%;
+  background-color: var(--white);
+}
+
+.content-logo .ghost div:nth-of-type(4) {
+  left: 60%;
+}
+
+.content-logo .ghost div:nth-of-type(5) {
+  height: 3vmin;
+  left: 80%;
+  bottom: -2.9vmin;
+  border-radius: 100% / 0% 0% 70% 70%;
+  background-color: var(--white);
+}
+
+
+/* about */
+.about {
+  margin: 64px 0;
+}
+
+.about-item {
+  height: 370px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 70px;
+  animation: floatEffect 3s ease-in-out infinite;
+}
+
+.about .wind {}
+
+.about .wind p {
+  font-size: 40px;
+  font-weight: 600;
+  color: white;
+
+}
+
+.about .wind p {
+  font-size: 40px;
+  font-weight: 600;
+  color: white;
+
+}
+
+.about .thin p {
+  font-size: 40px;
+  font-weight: 600;
+  color: white;
+
+}
+
+.about .wrap-img {
+  width: 100%;
+}
+
+.about .power {
+  font-size: 32px;
+  font-weight: 600;
+  color: white;
+
+}
+
+.chinh-sach {
+  padding: 0 16px;
+  text-align: center;
+
+}
+
+/* product */
+.my-row {
+  display: flex;
+  margin: 0 -10px;
+  flex-wrap: wrap;
+}
+
+.img-before-hotProduct {
+  border-radius: 10px;
+}
+
+.product-list {
+  box-shadow: 0 0 5px #c3c3c3;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.product {
+  /* border: 1px solid rgb(168, 168, 168); */
+  border-radius: 20px;
+  padding: 10px;
+
+}
+
+.wrap__product-hot {
+  border-radius: 5px;
+  box-shadow: 0 0 5px #dadada;
+}
+
+.wrap__product-hot:hover {
+  cursor: pointer;
+  box-shadow: 0 0 5px #c3c3c3;
+}
+
+
+.wrap-img {
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 20px 0;
+  border-radius: 6px;
+  margin-bottom: 20px;
+}
+
+.wrap-img:hover > img{
+  transform: scale(1.1);
+}
+
+
+
+.img-content {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+}
+
+.img-content-tg {
+  color: #fff;
+  background: #ea9d02;
+  border-radius: 0 6px 6px 0;
+  margin-bottom: 5px;
+  font-size: 13px;
+  padding: 0 8px;
+  line-height: 24px;
+}
+
+.img-content-sale {
+  font-size: 13px;
+  padding: 0 8px;
+  line-height: 24px;
+  border-radius: 0 6px 6px 0;
+  display: inline-block;
+  color: #fff;
+  background: #cb1c22;
+}
+
+.product-item {
+  margin: 12px 0;
+}
+
+.product-item:hover {
+  color: red;
+}
+
+.product-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.product-price-current {
+  border-radius: 15px;
+  width: 110px;
+  font-style: italic;
+  background-color: red;
+  text-align: center;
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 500;
+  overflow: hidden;
+  color: #fff;
+}
+
+.product-price-yest {
+  text-decoration: line-through;
+  font-size: 16px;
+}
+
+.product-about {
+  padding: 8px 4px;
+  border-radius: 10px;
+}
+
+.wrap-product-about {
+  margin-right: 20px;
+
+}
+
+.product-tg {
+  display: flex;
+}
+
+
+.swap-product-tg {
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 8px;
+}

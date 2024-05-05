@@ -1,0 +1,997 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chi Tiết Sản Phẩm</title>
+
+    <!-- Boostrap And Icon-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <!-- End Boostrap And Icon-->
+
+
+    <link rel="icon" type="image/x-icon" href="../img/favicon-predator.ico" />
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/chitietsanpham.css">
+</head>
+
+<body>
+    <div class="main" style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; overflow: hidden;">
+        <nav class="navbar navbar-expand-lg navbar-dark p-0 fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="home.html">
+                    <img src="../img/predator.svg" alt="">
+                </a>
+                <div class="collapse navbar-collapse">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a href="home.html" class="nav-link" style="position: relative;">Trang chủ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" style="position: relative;">Giới thiệu</a>
+                            <ul class="bg-white wrap__subnav">
+                                <li>
+                                    <div class="block-subnav__info">
+                                        <a class="block-subnav__link" href="../html/gioithieuthanhvien.html">Giới thiệu
+                                            thành viên</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="block-subnav__info">
+                                        <a class="block-subnav__link" href="sitemap.html">Sitemap</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" style="position: relative;">Liên hệ</a>
+                            <ul class="bg-white wrap__subnav">
+                                <li>
+                                    <div class="block-subnav__info">
+                                        <i class="fa-brands fa-facebook" style="color: #2977ff;"></i>
+                                        <a href="https://www.facebook.com/dgkhoa279?locale=vi_VN"
+                                            class="block-subnav__link">Facebook</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="block-subnav__info">
+                                        <i class="fa-brands fa-instagram" style="color: #000000;"></i>
+                                        <a href="https://www.instagram.com/dgkhoa279/"
+                                            class="block-subnav__link">Instagram</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="block-subnav__info">
+                                        <i class="fa-brands fa-tiktok" style="color: #000000;"></i>
+                                        <a href="" class="block-subnav__link">Tiktok</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../html/sukien.html" class="nav-link" style="position: relative;">Sự kiện</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../html/sanpham.html" class="nav-link" style="position: relative;">Sản phẩm</a>
+                        </li>
+                    </ul>
+                </div>
+                <form class="d-flex align-items-center">
+                    <div class="wrap__icon-item me-3">
+                        <i class="fa-solid fa-phone me-1" style="color: #ffffff;font-size: 20px;"></i>
+                        <div class="">
+                            <p style="font-size: 12px;">Gọi mua hàng</p>
+                            <p style="font-size: 12px;">
+                                <a href="tel:0376581562" style="text-decoration: none;">
+                                    <strong>0376581562</strong>
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="wrap__icon-item">
+                        <i class="fa-solid fa-bell" style="color: #ffffff;"></i>
+                        <p class="ms-2" style="font-size: 14px;">Thông báo</p>
+                        <div class="wrap__list-notify-nav">
+                            <div class="wrap__notify-nav-header">
+                                <p class="text-start p-2">Thông báo gần đây</p>
+                            </div>
+                            <div class="wrap__notify-nav-body">
+                                <div class="wrap__item-notify-nav">
+                                    <img style="width: 20%;" src="../img/gh-cr0.webp" alt="">
+                                    <div>
+                                        <h6 class="text-start ms-2">Đơn hàng của bạn đã được giao</h6>
+                                        <p class="text-break text-start ms-2">Đơn hàng của bạn sẽ được giao vào ngày
+                                            27/03/2024</p>
+                                    </div>
+                                </div>
+                                <div class="wrap__item-notify-nav">
+                                    <img style="width: 20%;" src="../img/gh-cr0.webp" alt="">
+                                    <div>
+                                        <h6 class="text-start ms-2">Đơn hàng của bạn đã được giao</h6>
+                                        <p class="text-break text-start ms-2">Đơn hàng của bạn sẽ được giao vào ngày
+                                            27/03/2024</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div style="border-top: 1px solid #dadada;" class="wrap__notify-nav-footer p-2">
+                                <button class="btn btn-sm btn-dark">Xem tất cả</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wrap__icon-item">
+                        <i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i>
+                        <p class="ms-2" style="font-size: 14px;">Giỏ hàng</p>
+                        <div class="wrap__list-notify-nav" style="right: 65px">
+                            <div class="wrap__notify-nav-header">
+                                <p class="text-start p-2">Sản phẩm mới thêm</p>
+                            </div>
+                            <div class="wrap__notify-nav-body wrap__notify-cart">
+                                <!-- Vẽ giao diện list cart -->
+
+                            </div>
+                            <div style="border-top: 1px solid #dadada;" class="wrap__notify-nav-footer p-2">
+                                <a href="../html/giohang.html" role="button" class="btn btn-sm btn-dark">Xem giỏ
+                                    hàng</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="input-group flex-nowrap me-3" style="width: 50%; ">
+                        <input type="text" class="form-control" placeholder="Tìm kiếm.." aria-label="Username"
+                            aria-describedby="addon-wrapping">
+                        <div class="input-group-result">
+                            <!-- Vẽ giao diện kết quả tìm kiếm -->
+                            <div class="d-flex align-items-center">
+                                <a style="text-decoration: none; color: #000;" href="../html/sanpham.html"
+                                    class="ms-3 flex-grow-1">
+                                    Sản phẩm mới ra mắt
+                                    <img src="../img/icons8-sale-90.png" alt="">
+                                </a>
+                                <img style="width: 15%;" src="../img/predator-helios-neo-16-mini-cart01.webp" alt="">
+                            </div>
+                        </div>
+                        <span class="input-group-text" id="addon-wrapping">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </span>
+                    </div>
+                    <div class="wrap__icon-user">
+                        <a href="../html/dangnhap.html" class="block-item-user">
+                            <i class="fa-solid fa-user" style="color: #ffffff;"></i>
+                        </a>
+                    </div>
+
+                </form>
+            </div>
+        </nav>
+        <div class="container-fluid bg-white" style="margin-top: 64px;">
+            <div class="row">
+                <div class="col-5">
+                    <div style="height: 80%;" id="carouselExampleControls" class="carousel carousel-dark slide"
+                        data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <!-- Đã vẽ giao diện bên JS -->
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                    <div class="wrap-img-item-sm container d-flex justify-content-center" style="width: 80%;">
+                        <div class="wrap_list-item-img d-flex ">
+                            <!-- Đã vẽ giao diện bên JS -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-7">
+                    <div class="card border-0">
+                        <div class="card-body">
+                            <h5 class="card-title" style="font-size: 2.2rem;">
+                                <!-- Đổ chữ tiêu đề bên JS -->
+                            </h5>
+                            <p class="card-text" style="font-size: 1.2rem;">Kiểu máy: PT516-52s-75E3 <br>Bộ phận:
+                                NH.QFQSV.001</p>
+                            <div class="wrap__types container-fluid">
+                                <div class="row ">
+                                    <!-- Đã vẽ giao diện bên JS -->
+                                </div>
+                            </div>
+                            <div class="wrap__button-cart text-center">
+                                <!-- Đã đổ dữ liệu button để xử lý logic Cart -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-8">
+                        <div class="wrap__ddnb">
+                            <h2 class="tiltel__section text-dark text-center">Đặc điểm nổi bật</h2>
+                            <section class="Outstanding text-dark">
+                                <!-- Đổ dữ liệu bên JS -->
+                            </section>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="wrap__tskt">
+                            <h2 class="tiltel__section text-dark text-center">Thông số kỹ thuật</h2>
+                            <section class="specifications text-dark">
+                                <div class="wrap__spec">
+                                    <div class="wrap__spec-name">
+                                        <h6 class="spec__title">HỆ ĐIỀU HÀNH</h6>
+                                    </div>
+                                    <div class="wrap__spec-title-and-info d-flex">
+                                        <div class="wrap__spec-title">
+                                            <p class="spec__title-th">Hệ điều hành</p>
+                                        </div>
+                                        <div class="wrap__spec-info">
+                                            <p class="spec__title-td">Windows 11 Home Single Language</p>
+                                        </div>
+                                    </div>
+                                    <div class="wrap__spec-title-and-info d-flex">
+                                        <div class="wrap__spec-title">
+                                            <p class="spec__title-th">Cấu trúc hệ điều hành</p>
+                                        </div>
+                                        <div class="wrap__spec-info">
+                                            <p class="spec__title-td">64 bit</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- RAM & Ổ cứng -->
+                                <div class="wrap__spec">
+                                    <div class="wrap__spec-name">
+                                        <h6 class="spec__title">RAM & Ổ cứng</h6>
+                                    </div>
+                                    <div class="wrap__spec-title-and-info d-flex">
+                                        <div class="wrap__spec-title">
+                                            <p class="spec__title-th">Dung lượng RAM</p>
+                                        </div>
+                                        <div class="wrap__spec-info">
+                                            <p class="spec__title-td">8GB</p>
+                                        </div>
+                                    </div>
+                                    <div class="wrap__spec-title-and-info d-flex">
+                                        <div class="wrap__spec-title">
+                                            <p class="spec__title-th">Loại RAM</p>
+                                        </div>
+                                        <div class="wrap__spec-info">
+                                            <p class="spec__title-td">DDR4, tốc độ bus 2400Mhz</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="wrap__spec-title-and-info d-flex">
+                                        <div class="wrap__spec-title">
+                                            <p class="spec__title-th">Số khe ram</p>
+                                        </div>
+                                        <div class="wrap__spec-info">
+                                            <p class="spec__title-td">Nâng cấp tối đa 12GB (4GB onboard cắm sẵn + 4GB
+                                                khe rời)
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="wrap__spec-title-and-info d-flex">
+                                        <div class="wrap__spec-title">
+                                            <p class="spec__title-th">Ổ cứng</p>
+                                        </div>
+                                        <div class="wrap__spec-info">
+                                            <p class="spec__title-td">256GB PCIe NVMe SSD (nâng cấp tối đa 2TB HDD và
+                                                1TBSSD
+                                                PCIe NVMe)</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="wrap__spec-title-and-info d-flex">
+                                        <div class="wrap__spec-title">
+                                            <p class="spec__title-th">Lõi Bộ Xử Lý</p>
+                                        </div>
+                                        <div class="wrap__spec-info">
+                                            <p class="spec__title-td">Tetradeca-lõi (14 lõi)</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="wrap__spec-title-and-info d-flex">
+                                        <div class="wrap__spec-title">
+                                            <p class="spec__title-th">Thế Hệ Bộ Xử Lý</p>
+                                        </div>
+                                        <div class="wrap__spec-info">
+                                            <p class="spec__title-td">12th Gen</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Thông số khác  -->
+                                <div class="wrap__spec">
+                                    <div class="wrap__spec-name">
+                                        <h6 class="spec__title">Thông số khác</h6>
+                                    </div>
+                                    <div class="wrap__spec-title-and-info d-flex">
+                                        <div class="wrap__spec-title">
+                                            <p class="spec__title-th">Chất liệu</p>
+                                        </div>
+                                        <div class="wrap__spec-info">
+                                            <p class="spec__title-td">Nhựa</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <!--màn hình  -->
+
+                                <div class="wrap__spec">
+                                    <div class="wrap__spec-name">
+                                        <h6 class="spec__title">Màn hình</h6>
+                                    </div>
+                                    <div class="wrap__spec-title-and-info d-flex">
+                                        <div class="wrap__spec-title">
+                                            <p class="spec__title-th">Màn hình cảm ứng</p>
+                                        </div>
+                                        <div class="wrap__spec-info">
+                                            <p class="spec__title-td">Không</p>
+                                        </div>
+                                    </div>
+                                    <div class="wrap__spec-title-and-info d-flex">
+                                        <div class="wrap__spec-title">
+                                            <p class="spec__title-th">Chất liệu tấm nền</p>
+                                        </div>
+                                        <div class="wrap__spec-info">
+                                            <p class="spec__title-td">Tấm nền TFT</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="wrap__spec-title-and-info d-flex">
+                                        <div class="wrap__spec-title">
+                                            <p class="spec__title-th">Kích thước màn hình</p>
+                                        </div>
+                                        <div class="wrap__spec-info">
+                                            <p class="spec__title-td">15.6 inches</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="wrap__spec-title-and-info d-flex">
+                                        <div class="wrap__spec-title">
+                                            <p class="spec__title-th">Độ phân giải màn hình</p>
+                                        </div>
+                                        <div class="wrap__spec-info">
+                                            <p class="spec__title-td">1920 x 1080 pixels (FullHD)</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Giao tiếp & kết nối  -->
+                                <div class="wrap__spec">
+                                    <div class="wrap__spec-name">
+                                        <h6 class="spec__title">Giao tiếp & kết nối</h6>
+                                    </div>
+                                    <div class="wrap__spec-title-and-info d-flex">
+                                        <div class="wrap__spec-title">
+                                            <p class="spec__title-th">Loại đèn bàn phím</p>
+                                        </div>
+                                        <div class="wrap__spec-info">
+                                            <p class="spec__title-td">Không</p>
+                                        </div>
+                                    </div>
+                                    <div class="wrap__spec-title-and-info d-flex">
+                                        <div class="wrap__spec-title">
+                                            <p class="spec__title-th">Webcam</p>
+                                        </div>
+                                        <div class="wrap__spec-info">
+                                            <p class="spec__title-td">720P</p>
+                                        </div>
+                                    </div>
+                                    <div class="wrap__spec-title-and-info d-flex">
+                                        <div class="wrap__spec-title">
+                                            <p class="spec__title-th">Wi-Fi</p>
+                                        </div>
+                                        <div class="wrap__spec-info">
+                                            <p class="spec__title-td">Wi-Fi-5</p>
+                                        </div>
+                                    </div>
+                                    <div class="wrap__spec-title-and-info d-flex">
+                                        <div class="wrap__spec-title">
+                                            <p class="spec__title-th">Bluetooth</p>
+                                        </div>
+                                        <div class="wrap__spec-info">
+                                            <p class="spec__title-td">V5.0</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!--Công nghệ âm thanh-->
+                                <div class="wrap__spec">
+                                    <div class="wrap__spec-name">
+                                        <h6 class="spec__title">Công nghệ âm thanh</h6>
+                                    </div>
+                                    <div class="wrap__spec-title-and-info d-flex">
+                                        <div class="wrap__spec-title">
+                                            <p class="spec__title-th">Công nghệ âm thanh</p>
+                                        </div>
+                                        <div class="wrap__spec-info">
+                                            <p class="spec__title-td">Loa Stereo</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!--Tiện ích khác-->
+                                <div class="wrap__spec">
+                                    <div class="wrap__spec-name">
+                                        <h6 class="spec__title">Tiện ích khác</h6>
+                                    </div>
+                                    <div class="wrap__spec-title-and-info d-flex">
+                                        <div class="wrap__spec-title">
+                                            <p class="spec__title-th">Tính năng đặc biệt</p>
+                                        </div>
+                                        <div class="wrap__spec-info">
+                                            <p class="spec__title-td">Ổ cứng SSD</p>
+                                        </div>
+                                    </div>
+                                    <div class="wrap__spec-title-and-info d-flex">
+                                        <div class="wrap__spec-title">
+                                            <p class="spec__title-th">Đầu đọc vân tay</p>
+                                        </div>
+                                        <div class="wrap__spec-info">
+                                            <p class="spec__title-td">Có</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <!-- pin  -->
+                                <div class="wrap__spec">
+                                    <div class="wrap__spec-name">
+                                        <h6 class="spec__title">Pin & công nghệ sạc</h6>
+                                    </div>
+                                    <div class="wrap__spec-title-and-info d-flex">
+                                        <div class="wrap__spec-title">
+                                            <p class="spec__title-th">Pin</p>
+                                        </div>
+                                        <div class="wrap__spec-info">
+                                            <p class="spec__title-td">36.7 Wh 2-cell Li-ion battery</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Thiết kế & Trọng lượng -->
+                                <div class="wrap__spec">
+                                    <div class="wrap__spec-name">
+                                        <h6 class="spec__title">Thiết kế & Trọng lượng</h6>
+                                    </div>
+                                    <div class="wrap__spec-title-and-info d-flex">
+                                        <div class="wrap__spec-title">
+                                            <p class="spec__title-th">Kích thước</p>
+                                        </div>
+                                        <div class="wrap__spec-info">
+                                            <p class="spec__title-td">363.4 (W) x 238.4 (D) x 19.9 (H) mm</p>
+                                        </div>
+                                    </div>
+                                    <div class="wrap__spec-title-and-info d-flex">
+                                        <div class="wrap__spec-title">
+                                            <p class="spec__title-th">Trọng lượng</p>
+                                        </div>
+                                        <div class="wrap__spec-info">
+                                            <p class="spec__title-td">2.40kg</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- cổng giao tiếp -->
+                                <div class="wrap__spec">
+                                    <div class="wrap__spec-name">
+                                        <h6 class="spec__title">Giao Tiếp/Cổng</h6>
+                                    </div>
+                                    <div class="wrap__spec-title-and-info d-flex">
+                                        <div class="wrap__spec-title">
+                                            <p class="spec__title-th">HDMI</p>
+                                        </div>
+                                        <div class="wrap__spec-info">
+                                            <p class="spec__title-td">Có</p>
+                                        </div>
+                                    </div>
+                                    <div class="wrap__spec-title-and-info d-flex">
+                                        <div class="wrap__spec-title">
+                                            <p class="spec__title-th">Số Ngõ Ra HDMI</p>
+                                        </div>
+                                        <div class="wrap__spec-info">
+                                            <p class="spec__title-td">1</p>
+                                        </div>
+                                    </div>
+                                    <div class="wrap__spec-title-and-info d-flex">
+                                        <div class="wrap__spec-title">
+                                            <p class="spec__title-th">Số Lượng Cổng USB 3.2 Thế Hệ 2 Loại A</p>
+                                        </div>
+                                        <div class="wrap__spec-info">
+                                            <p class="spec__title-td">2</p>
+                                        </div>
+                                    </div>
+                                    <div class="wrap__spec-title-and-info d-flex">
+                                        <div class="wrap__spec-title">
+                                            <p class="spec__title-th">Số Lượng Cổng USB 3.2 Thế Hệ 2 Loại C</p>
+                                        </div>
+                                        <div class="wrap__spec-info">
+                                            <p class="spec__title-td">2</p>
+                                        </div>
+                                    </div>
+                                    <div class="wrap__spec-title-and-info d-flex">
+                                        <div class="wrap__spec-title">
+                                            <p class="spec__title-th">Tổng Số Cổng USB</p>
+                                        </div>
+                                        <div class="wrap__spec-info">
+                                            <p class="spec__title-td">4</p>
+                                        </div>
+                                    </div>
+                                    <div class="wrap__spec-title-and-info d-flex">
+                                        <div class="wrap__spec-title">
+                                            <p class="spec__title-th">USB Loại C</p>
+                                        </div>
+                                        <div class="wrap__spec-info">
+                                            <p class="spec__title-td">Có</p>
+                                        </div>
+                                    </div>
+                                    <div class="wrap__spec-title-and-info d-flex">
+                                        <div class="wrap__spec-title">
+                                            <p class="spec__title-th">Mạng (RJ-45)</p>
+                                        </div>
+                                        <div class="wrap__spec-info">
+                                            <p class="spec__title-td">Có</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-7">
+                    <div class="wrap-filter-comment text-đark" style="max-height: 588px;min-height: 588px;">
+                        <h4>Đánh giá Laptop Asus TUF GAMING F15 FX506HF-HN014W</h4>
+                        <div class="wrap-point-star d-flex align-items-center">
+                            <p class="ms-2 me-2" style="font-size: 26px;">5.0</p>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <a href="" class="ms-2">5 đánh giá</a>
+                        </div>
+                        <div class="row">
+                            <div class="col-7">
+                                <div class="wrap-list-comment-satr ms-5">
+                                    <div class="filter__item-star d-flex align-items-center">
+                                        <p>5</p>
+                                        <i class="fa-solid fa-star ms-2 me-2" style="color: #FFD43B;"></i>
+                                        <div class="progress me-2" style="height: 12px;">
+                                            <div class="progress-bar" role="progressbar" style="width: 75%;"
+                                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">75%</div>
+                                        </div>
+                                        <span>1 đánh giá</span>
+                                    </div>
+                                    <div class="filter__item-star d-flex align-items-center">
+                                        <p>4</p>
+                                        <i class="fa-solid fa-star ms-2 me-2" style="color: #FFD43B;"></i>
+                                        <div class="progress me-2" style="height: 12px;">
+                                            <div class="progress-bar" role="progressbar" style="width: 100%;"
+                                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+                                        </div>
+                                        <span>1 đánh giá</span>
+                                    </div>
+                                    <div class="filter__item-star d-flex align-items-center">
+                                        <p>3</p>
+                                        <i class="fa-solid fa-star ms-2 me-2" style="color: #FFD43B;"></i>
+                                        <div class="progress me-2" style="height: 12px;">
+                                            <div class="progress-bar" role="progressbar" style="width: 25%;"
+                                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+                                        </div>
+                                        <span>1 đánh giá</span>
+                                    </div>
+                                    <div class="filter__item-star d-flex align-items-center">
+                                        <p>2</p>
+                                        <i class="fa-solid fa-star ms-2 me-2" style="color: #FFD43B;"></i>
+                                        <div class="progress me-2" style="height: 12px;">
+                                            <div class="progress-bar" role="progressbar" style="width: 50%;"
+                                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">50%</div>
+                                        </div>
+                                        <span>1 đánh giá</span>
+                                    </div>
+                                    <div class="filter__item-star d-flex align-items-center">
+                                        <p>1</p>
+                                        <i class="fa-solid fa-star ms-2 me-2" style="color: #FFD43B;"></i>
+                                        <div class="progress me-2" style="height: 12px;">
+                                            <div class="progress-bar" role="progressbar" style="width: 0%;"
+                                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                        <span>1 đánh giá</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-5 text-center">
+                                <p>Bạn đánh giá sao về sản phẩm này ?</p>
+                                <button type="button" class="btn btn-danger mt-3" data-bs-toggle="modal"
+                                    data-bs-target="#modalLogin">Đánh giá ngay</button>
+                            </div>
+                        </div>
+                        <div class="wrap__filter-criteria d-flex mt-3">
+                            <p class="me-3">Lọc theo</p>
+                            <div class="filter-criteria__item">Tất cả</div>
+                            <div class="filter-criteria__item">Có hình ảnh</div>
+                            <div class="filter-criteria__item">Có video</div>
+                        </div>
+                        <div class="wrap__filter-criteria d-flex mt-3 mb-4">
+                            <div class="filter-criteria__item d-flex align-items-center">
+                                <span>5</span>
+                                <i class="fa-solid fa-star ms-1 me-1" style="color: #FFD43B;"></i>
+                            </div>
+                            <div class="filter-criteria__item d-flex align-items-center">
+                                <span>4</span>
+                                <i class="fa-solid fa-star ms-1 me-1" style="color: #FFD43B;"></i>
+                            </div>
+                            <div class="filter-criteria__item d-flex align-items-center">
+                                <span>3</span>
+                                <i class="fa-solid fa-star ms-1 me-1" style="color: #FFD43B;"></i>
+                            </div>
+                            <div class="filter-criteria__item d-flex align-items-center">
+                                <span>2</span>
+                                <i class="fa-solid fa-star ms-1 me-1" style="color: #FFD43B;"></i>
+                            </div>
+                            <div class="filter-criteria__item d-flex align-items-center">
+                                <span>1</span>
+                                <i class="fa-solid fa-star ms-1 me-1" style="color: #FFD43B;"></i>
+                            </div>
+                        </div>
+
+                        <div class="wrap__user-danhGia mt-3">
+                            <div class="box-comment__info-user d-flex align-items-center mt-1">
+                                <div class="box-comment__avt-user">
+                                    <img src="../img/avtQHuy.jpg" style="width: 35px;height: 35px;"
+                                        class="rounded-circle bg-white text-dark">
+                                </div>
+                                <div class="box-comment__name-user ms-2">
+                                    <strong>Nguyễn Quốc Huy</strong>
+                                    <i class="fa-solid fa-star ms-1 me-1" style="color: #FFD43B;"></i>
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+
+                                </div>
+                            </div>
+                            <div class="box-comment__danhGiaCuaUser">
+                                <p class="ms-5 mb-3">Máy cấu hình ngon,ổn</p>
+                            </div>
+                        </div>
+
+                        <div class="wrap__user-danhGia mt-3">
+                            <div class="box-comment__info-user d-flex align-items-center mt-1">
+                                <div class="box-comment__avt-user">
+                                    <img src="../img/avtQuangHuy.jpg" style="width: 35px;height: 35px;"
+                                        class="rounded-circle bg-white text-dark">
+                                </div>
+                                <div class="box-comment__name-user ms-2">
+                                    <strong>Nguyễn Quang Huy</strong>
+                                    <i class="fa-solid fa-star ms-1 me-1" style="color: #FFD43B;"></i>
+                                </div>
+                            </div>
+                            <div class="box-comment__danhGiaCuaUser">
+                                <p class="ms-5 mb-3">Shop bán đồ dỏm vãi ra</p>
+                            </div>
+                        </div>
+
+                        <div class="wrap__user-danhGia mt-3">
+                            <div class="box-comment__info-user d-flex align-items-center mt-1">
+                                <div class="box-comment__avt-user">
+                                    <img src="../img/avtHoang.jpg" style="width: 35px;height: 35px;"
+                                        class="rounded-circle bg-white text-dark">
+                                </div>
+                                <div class="box-comment__name-user ms-2">
+                                    <strong>Nguyễn Huy Hoàng</strong>
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                </div>
+                            </div>
+                            <div class="box-comment__danhGiaCuaUser">
+                                <p class="ms-5 mb-3">Quạt tản nhiệt kêu như cái máy cày :></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-5 text-white">
+                    <div class="container p-0">
+                        <!-- Phần hỏi đáp  -->
+                        <div class="wrap__content-comment" style="max-height: 588px;min-height: 588px;">
+                            <h3 style="font-family: Georgia, 'Times New Roman', Times, serif;" class="text-dark">Hỏi và Đáp</h3>
+                            <div class="item__comment text-dark">
+                                <div class="box-comment__info-user d-flex align-items-center mt-1 mb-2">
+                                    <div class="box-comment__avt-user">
+                                        <img src="../img/avtDkhoa.jpg" style="width: 35px;height: 35px;"
+                                            class="rounded-circle bg-white text-dark">
+                                    </div>
+                                    <div class="box-comment__name-user ms-2"> <strong>Võ Đăng Khoa</strong></div>
+                                </div>
+                                <div class="box-comment__qaa">
+                                    <p>Cho mình hỏi chi nhánh Tp HCM còn hàng không ạ</p>
+                                    <div class="box-comment__time d-flex align-items-center">
+                                        <p class="ms-auto" style="font-size: 14px;color: #9a9a9a;">10p trước</p>
+                                        <p class="ms-3 title-reply" style="font-size: 16px;">Trả lời</p>
+                                        <i class="ms-3 fa-regular fa-heart" style="color: #ffffff;"></i>
+                                    </div>
+                                </div>
+                                <!-- Phần quản trị viên reply  -->
+                                <div class="box-comment__info-user d-flex align-items-center mt-1 mb-2">
+                                    <div class="box-comment__avt-user ms-auto">
+                                        <img src="../img/avt.png" style="width: 35px;height: 35px;"
+                                            class="rounded-circle bg-white text-dark">
+                                    </div>
+                                    <div class="box-comment__name-user ms-2"> <strong>Predator</strong></div>
+                                </div>
+                                <div class="box-comment__qaa ms-auto">
+                                    <p>Dạ hiện tại chi nhánh TpHCM vẫn còn ạ</p>
+                                    <div class="box-comment__time d-flex align-items-center">
+                                        <p class="ms-auto" style="font-size: 14px;color: #9a9a9a;">10p trước</p>
+                                        <p class="ms-3 title-reply" style="font-size: 16px;">Trả lời</p>
+                                        <i class="ms-3 fa-regular fa-heart" style="color: #ffffff;"></i>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="item__comment text-dark">
+                                <div class="box-comment__info-user d-flex align-items-center mt-1 mb-2">
+                                    <div class="box-comment__avt-user">
+                                        <img src="../img/avtXuanHo.jpg" style="width: 35px;height: 35px;"
+                                            class="rounded-circle bg-white text-dark">
+                                    </div>
+                                    <div class="box-comment__name-user ms-2"> <strong>Nguyễn Xuân Hồ</strong></div>
+                                </div>
+                                <div class="box-comment__qaa">
+                                    <p>Con này học code được không ạ</p>
+                                    <div class="box-comment__time d-flex align-items-center">
+                                        <p class="ms-auto" style="font-size: 14px;color: #9a9a9a;">10p trước</p>
+                                        <p class="ms-3 title-reply" style="font-size: 16px;">Trả lời</p>
+                                        <i class="ms-3 fa-regular fa-heart" style="color: #ffffff;"></i>
+                                    </div>
+                                </div>
+                                <!-- Phần quản trị viên reply  -->
+                                <div class="box-comment__info-user d-flex align-items-center mt-1 mb-2">
+                                    <div class="box-comment__avt-user ms-auto">
+                                        <img src="../img/avt.png" style="width: 35px;height: 35px;"
+                                            class="rounded-circle bg-white text-dark">
+                                    </div>
+                                    <div class="box-comment__name-user ms-2"> <strong>Predator</strong></div>
+                                </div>
+                                <div class="box-comment__qaa ms-auto">
+                                    <p>Dạ được anh nha</p>
+                                    <div class="box-comment__time d-flex align-items-center">
+                                        <p class="ms-auto" style="font-size: 14px;color: #9a9a9a;">10p trước</p>
+                                        <p class="ms-3 title-reply" style="font-size: 16px;">Trả lời</p>
+                                        <i class="ms-3 fa-regular fa-heart" style="color: #ffffff;"></i>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="item__askAnyOne mt-5 d-flex align-items-center">
+                                <div class="form-floating text-dark" style="width: 88%;box-shadow: 0 0 5px #d2d2d2;">
+                                    <textarea class="form-control "
+                                        placeholder=""
+                                        style="height: 50px"></textarea>
+                                    <label style="font-family: serif;" for="floatingTextarea2">Xin mời để lại câu hỏi,Predator sẽ phản hồi trong vòng 1h</label>
+                                </div>
+                                <div class="ms-3">
+                                    <button class="btn btn-md btn-danger">Gửi</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <button id="back-to-top-btn" class="btn btn-dark" style="border-radius: 0;">Trở lại đầu trang</button>
+            </div>
+        </div>
+        <footer>
+            <div class="wrap-footer container mt-4">
+                <div class="row mt-3 ">
+                    <!-- Chính sách bảo hành  -->
+                    <div class="col-lg-3 col-md-4 col-xs-6">
+                        <div class="footer-list-info">
+                            <h5 class="footer__title">Thông tin chính sách</h5>
+                            <div class="footer__wrap-list-info">
+                                <ul class="footer-list-items">
+                                    <li class="footer__item">
+                                        <a href="" class="footer__link-item">
+                                            Chính sách bảo hành
+                                        </a>
+                                    </li>
+                                    <li class="footer__item">
+                                        <a href="" class="footer__link-item">
+                                            Chính sách bán hàng
+                                        </a>
+                                    </li>
+                                    <li class="footer__item">
+                                        <a href="" class="footer__link-item">
+                                            Chính sách bảo mật
+                                        </a>
+                                    </li>
+                                    <li class="footer__item">
+                                        <a href="" class="footer__link-item">
+                                            Chính sách giao hàng
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- Tổng đài  -->
+                    <div class="col-lg-3 col-md-4 col-xs-6">
+                        <div class="footer-list-info">
+                            <h5 class="footer__title">Tổng đài hỗ trợ</h5>
+                            <div class="footer__wrap-list-info">
+                                <ul class="footer-list-items">
+                                    <li class="footer__item">
+                                        <span class="text-white">Gọi mua hàng:</span>
+                                        <a href="tel:037658562" class="footer__link-item text-primary">
+                                            037658562
+                                        </a>
+                                    </li>
+                                    <li class="footer__item">
+                                        <span class="text-white">CSKH:</span>
+                                        <a href="" class="footer__link-item text-primary">
+                                            03333456767
+                                        </a>
+                                    </li>
+                                    <li class="footer__item">
+                                        <span class="text-white">Email:</span>
+                                        <a href="mailto:vodangkhoa270904@gmail.com"
+                                            class="footer__link-item text-primary">
+                                            vodangkhoa270904@gmail.com
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 col-xs-6">
+                        <div class="footer-list-info">
+                            <h5 class="footer__title">Thông tin</h5>
+                            <div class="footer__wrap-list-info">
+                                <ul class="footer-list-items">
+                                    <li class="footer__item">
+                                        <a href="" class="footer__link-item">
+                                            Hệ thống cửa hàng
+                                        </a>
+                                    </li>
+                                    <li class="footer__item">
+                                        <a href="" class="footer__link-item">
+                                            Trung tâm bảo hành
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 col-xs-6">
+                        <div class="footer-list-info">
+                            <h5 class="footer__title">Hình thức thanh toán</h5>
+                            <div class="footer__wrap-list-info">
+                                <ul class="footer-list-items">
+                                    <div class="row mb-1">
+                                        <div class="col-3">
+                                            <li class="footer__item">
+                                                <img src="../img/pay_1.webp" alt="" class="footer__img-item">
+                                            </li>
+                                        </div>
+                                        <div class="col-3">
+                                            <li class="footer__item">
+                                                <img src="../img/pay_2.webp" alt="" class="footer__img-item">
+                                            </li>
+                                        </div>
+                                        <div class="col-3">
+                                            <li class="footer__item">
+                                                <img src="../img/pay_3.webp" alt="" class="footer__img-item">
+                                            </li>
+                                        </div>
+                                        <div class="col-3">
+                                            <li class="footer__item">
+                                                <img src="../img/pay_4.webp" alt="" class="footer__img-item">
+                                            </li>
+                                        </div>
+
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <li class="footer__item">
+                                                <img src="../img/pay_5.webp" alt="" class="footer__img-item">
+                                            </li>
+                                        </div>
+                                        <div class="col-3">
+                                            <li class="footer__item">
+                                                <img src="../img/pay_6.webp" alt="" class="footer__img-item">
+                                            </li>
+                                        </div>
+                                        <div class="col-3">
+                                            <li class="footer__item">
+                                                <img src="../img/pay_7.webp" alt="" class="footer__img-item">
+                                            </li>
+                                        </div>
+                                        <div class="col-3">
+                                            <li class="footer__item">
+                                                <!-- <img src="../img/pay_8.webp" alt="" class="footer__img-item"> -->
+                                            </li>
+                                        </div>
+                                    </div>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-3" style="border-top: 1px solid #c3c3c3;">
+                    <div class="footer__wrap-media text-center">
+                        <a href="" class="footer__wrap-link-media">
+                            <i class="footer__icon-media fa-brands fa-facebook"></i>
+                        </a>
+                        <a href="" class="footer__wrap-link-media">
+                            <i class="footer__icon-media fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="" class="footer__wrap-link-media">
+                            <i class="footer__icon-media fa-brands fa-telegram"></i>
+                        </a>
+                        <a href="" class="footer__wrap-link-media">
+                            <i class="footer__icon-media fa-brands fa-twitter"></i>
+                        </a>
+                    </div>
+                    <div style="font-size: 14px;" class="footer__address text-white text-center">
+                        <p>Chịu Trách Nhiệm Quản Lý Nội Dung: Võ Đăng Khoa - Điện thoại liên hệ: 0388858854</p>
+                        <p style="font-style: italic;">Địa chỉ 320 Nguyễn Đình Chiểu,Thị Trấn Thanh Bình,Huyện Bù Đốp,Tỉnh Bình Phước</p>
+                        <p>© 2024 - Bản quyền thuộc về 4HKG</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <div class="modal fade" id="modalLogin" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" style="width: 25%;">
+                <div class="modal-content bg-dark">
+                    <div class="modal-header justify-content-center">
+                        <div class="" id="exampleModalLabel">
+                            <img src="../img/predator.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="modal-body">
+                        <p class="text-white text-center">Vui lòng đăng nhập để đánh giá</p>
+                    </div>
+                    <div class="modal-footer justify-content-evenly">
+                        <a href="../html/dangnhap.html" role="button" class="btn btn-outline-danger">Đăng nhập</a>
+                        <a href="../html/dangnhap.html" role="button" class="btn btn-outline-danger">Đăng ký</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            // Smooth scroll to the top of the page when the button is clicked
+            document.getElementById('back-to-top-btn').addEventListener('click', () => {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+
+        </script>
+    </div>
+    <script src="../js/search.js"></script>
+    <script src="../js/product-detail.js"></script>
+</body>
+
+</html>

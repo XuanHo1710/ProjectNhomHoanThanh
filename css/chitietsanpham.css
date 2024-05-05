@@ -1,0 +1,212 @@
+.modal-dialog {
+    top: 115px;
+}
+
+.modal-content {
+    /* background-color: black; */
+}
+
+.modal-header {
+
+}
+
+/* Css của Khoa */
+
+.wrap-item-shopping {
+    width: 500px;
+    height: 500px;
+    background-color: red;
+}
+
+.carousel-inner {
+    width: 60%;
+    height: 100%;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.card {
+    background: #fff;
+    color: #000;
+}
+
+
+.wrap1_img-item {
+    margin: 0 5px;
+}
+
+.wrap_img-item {
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    width: 60px;
+    height: 50px;
+    border: 1px solid #8a8a8ac9;
+    border-radius: 3px;
+}
+
+.img_bottom-carousel {
+    opacity: 0.8;
+    width: 80%;
+    height: 80%;
+}
+
+.img_bottom-carousel:hover {
+    opacity: 1;
+    transition: transform ease 0.3s;
+    transform: scale(1.1);
+}
+
+.wrap__types {
+    width: 700px;
+}
+
+.wrap__chose-color-img {
+    display: flex;
+    cursor: pointer;
+    text-align: center;
+    align-items: center;
+    border: 1px solid #2c3b83c9;
+    width: 100px;
+    border-radius: 5px;
+}
+
+.wrap__spec-title-and-info {
+    border-bottom: 1px solid #e0e0e0;
+    /* align-items: center; */
+    color: #000;
+}
+
+.wrap__spec-title {
+    border-right: 1px solid #e0e0e0;
+}
+
+.spec__title {
+    text-transform: uppercase;
+    padding: 6px;
+    color: rgb(0 0 0);
+    background-color: rgb(30 30 30 / 6%);
+    margin: 0px;
+}
+
+.spec__title-th {
+    -webkit-line-clamp: 2;
+    min-width: 245px;
+    max-width: 245px;
+}
+
+.spec__title-th,
+.spec__title-td {
+    font-size: 16px;
+    padding: 4px;
+    margin: 0;
+    color: #000;
+}
+
+
+.Outstanding {
+    color: #fff;
+}
+
+.Outstanding > ul > li {
+    margin-left: 20px;
+}
+
+.ctn-info-other {
+    text-align: center;
+    box-shadow: 0 0 5px 1px #bababa;
+    border-radius: 10px;
+    width: 88%;
+    margin: 5px auto;
+    padding: 0;
+}
+
+.ctn-info-other:hover {
+    opacity: 1;
+    cursor: pointer;
+    transition: transform ease 0.1s;
+    transform: scale(1.1);
+    box-shadow: 0 0 5px rgb(102, 102, 102);
+}
+
+.c4-addcss {
+    opacity: 0.9;
+    padding: 0;
+}
+
+
+
+.price-style {
+    color: #ff0000db;
+    font-style: italic;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+/* phần filter  */
+.progress  {
+    width: 45%;
+}
+
+.fa-star {
+    font-size: 12px;
+}
+
+.filter-criteria__item {
+    box-shadow: 0 0 5px 1px #bababa;
+    border-radius: 14px;
+    padding: 1px 8px;
+    margin: 0px 5px;
+}
+
+.filter-criteria__item:hover {
+    background-color: #5a5a5a;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* phần comment đánh giá  */
+.wrap__ddnb,
+.wrap__tskt,
+.wrap__content-comment,
+.wrap-filter-comment {
+    margin: 4px;
+    padding: 12px;
+    border-radius: 10px;
+    box-shadow: 0 0 6px #d4d4d4;
+}
+
+.wrap__user-danhGia {
+    border-bottom: 1px solid #dfdfdf;
+}
+/* phần comment hỏi và trả lời */
+
+.box-comment__qaa {
+    box-shadow: 0 0 6px #d4d4d4;
+    width: 50%;
+    border-radius: 10px;
+    padding: 2px 5px;
+}
+
+.title-reply:hover {
+    cursor: pointer;
+    color: #fd853c;
+}
+
+.wrap-point-star i.fa-star {
+    margin: 0 4px;
+    font-size: 18px;
+}
+
+.fa-heart:hover {
+    cursor: pointer;
+}
+
+.item__askAnyOne{
+
+    
+}
+
+

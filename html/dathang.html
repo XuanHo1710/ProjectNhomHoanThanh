@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đặt Hàng</title>
+
+    <!-- Boostrap And Icon-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <!-- End Boostrap And Icon-->
+    <link rel="icon" type="image/x-icon" href="../img/favicon-predator.ico" />
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/dathang.css">
+</head>
+
+<body>
+    <div class="main" style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; overflow: hidden;">
+        <nav class="navbar navbar-expand-lg navbar-dark p-0 fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="home.html">
+                    <img src="../img/predator.svg" alt="">
+                </a>
+                <div class="collapse navbar-collapse">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a href="home.html" class="nav-link" style="position: relative;">Trang chủ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" style="position: relative;">Giới thiệu</a>
+                            <ul class="bg-white wrap__subnav">
+                                <li>
+                                    <div class="block-subnav__info">
+                                        <a class="block-subnav__link" href="../html/gioithieuthanhvien.html">Giới thiệu
+                                            thành viên</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="block-subnav__info">
+                                        <a class="block-subnav__link" href="sitemap.html">Sitemap</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" style="position: relative;">Liên hệ</a>
+                            <ul class="bg-white wrap__subnav">
+                                <li>
+                                    <div class="block-subnav__info">
+                                        <i class="fa-brands fa-facebook" style="color: #2977ff;"></i>
+                                        <a href="https://www.facebook.com/dgkhoa279?locale=vi_VN"
+                                            class="block-subnav__link">Facebook</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="block-subnav__info">
+                                        <i class="fa-brands fa-instagram" style="color: #000000;"></i>
+                                        <a href="https://www.instagram.com/dgkhoa279/"
+                                            class="block-subnav__link">Instagram</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="block-subnav__info">
+                                        <i class="fa-brands fa-tiktok" style="color: #000000;"></i>
+                                        <a href="" class="block-subnav__link">Tiktok</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../html/sukien.html" class="nav-link" style="position: relative;">Sự kiện</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../html/sanpham.html" class="nav-link" style="position: relative;">Sản phẩm</a>
+                        </li>
+                    </ul>
+                </div>
+                <form class="d-flex align-items-center">
+                    <div class="wrap__icon-item me-3">
+                        <i class="fa-solid fa-phone me-1" style="color: #ffffff;font-size: 20px;"></i>
+                        <div class="">
+                            <p style="font-size: 12px;">Gọi mua hàng</p>
+                            <p style="font-size: 12px;">
+                                <a href="tel:0376581562" style="text-decoration: none;">
+                                    <strong>0376581562</strong>
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="wrap__icon-item">
+                        <i class="fa-solid fa-bell" style="color: #ffffff;"></i>
+                        <p class="ms-2" style="font-size: 14px;">Thông báo</p>
+                        <div class="wrap__list-notify-nav">
+                            <div class="wrap__notify-nav-header">
+                                <p class="text-start p-2">Thông báo gần đây</p>
+                            </div>
+                            <div class="wrap__notify-nav-body">
+                                <div class="wrap__item-notify-nav">
+                                    <img style="width: 20%;" src="../img/gh-cr0.webp" alt="">
+                                    <div>
+                                        <h6 class="text-start ms-2">Đơn hàng của bạn đã được giao</h6>
+                                        <p class="text-break text-start ms-2">Đơn hàng của bạn sẽ được giao vào ngày
+                                            27/03/2024</p>
+                                    </div>
+                                </div>
+                                <div class="wrap__item-notify-nav">
+                                    <img style="width: 20%;" src="../img/gh-cr0.webp" alt="">
+                                    <div>
+                                        <h6 class="text-start ms-2">Đơn hàng của bạn đã được giao</h6>
+                                        <p class="text-break text-start ms-2">Đơn hàng của bạn sẽ được giao vào ngày
+                                            27/03/2024</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div style="border-top: 1px solid #dadada;" class="wrap__notify-nav-footer p-2">
+                                <button class="btn btn-sm btn-dark">Xem tất cả</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wrap__icon-item">
+                        <i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i>
+                        <p class="ms-2" style="font-size: 14px;">Giỏ hàng</p>
+                        <div class="wrap__list-notify-nav" style="right: 65px">
+                            <div class="wrap__notify-nav-header">
+                                <p class="text-start p-2">Sản phẩm mới thêm</p>
+                            </div>
+                            <div class="wrap__notify-nav-body wrap__notify-cart">
+                                <!-- Vẽ giao diện list cart -->
+
+                            </div>
+                            <div style="border-top: 1px solid #dadada;" class="wrap__notify-nav-footer p-2">
+                                <a href="../html/giohang.html" role="button" class="btn btn-sm btn-dark">Xem giỏ
+                                    hàng</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="input-group flex-nowrap me-3" style="width: 50%; ">
+                        <input type="text" class="form-control" placeholder="Tìm kiếm.." aria-label="Username"
+                            aria-describedby="addon-wrapping">
+                        <div class="input-group-result">
+                            <!-- Vẽ giao diện kết quả tìm kiếm -->
+                            <div class="d-flex align-items-center">
+                                <a style="text-decoration: none; color: #000;" href="../html/sanpham.html"
+                                    class="ms-3 flex-grow-1">
+                                    Sản phẩm mới ra mắt
+                                    <img src="../img/icons8-sale-90.png" alt="">
+                                </a>
+                                <img style="width: 15%;" src="../img/predator-helios-neo-16-mini-cart01.webp" alt="">
+                            </div>
+                        </div>
+                        <span class="input-group-text" id="addon-wrapping">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </span>
+                    </div>
+                    <div class="wrap__icon-user">
+                        <a href="../html/dangnhap.html" class="block-item-user">
+                            <i class="fa-solid fa-user" style="color: #ffffff;"></i>
+                        </a>
+                    </div>
+
+                </form>
+            </div>
+        </nav>
+        <article style="height:950px; margin-top: 84px;">
+            <div class="content" style="width: 650px; margin: 0 auto;">
+                <div class="content-header d-flex justify-content-between">
+                    <a href="../html/giohang.html" class="buymore text-decoration-none text-dark  my-1 ms-2">Quay lại giỏ hàng</a>
+                    <p class="customer  my-1 me-2">Giỏ hàng của anh</p>
+                </div>
+                <div class="order w-100 border" style="border-radius: 5px;height: 850px;box-shadow: 0 0 5px #dadada;border: none!important;outline: none;">
+                    <div class="order-first border-bottom py-3 px-4">
+                        <!-- Đổ dữ liệu từ cart qua  -->
+                    </div>
+                    <form action="../html/thanhtoan.html" class="form">
+                        <div class="order-second border-bottom py-3 px-4">
+                            <p class="fs-14px mb-2">THÔNG TIN KHÁCH HÀNG</p>
+                            <div class="form-group mb-2">
+                                <input type="radio" id="female" name="1" checked>
+                                <label for="female" class="fs-14px me-3">Nam</label>
+                                <input type="radio" id="male" name="1">
+                                <label for="male" class="fs-14px">Nữ</label>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" style="position: relative; background-color: transparent;width: 48%;" class="border rounded py-1 px-2 form-hoten" placeholder="Họ và tên">
+                                <input type="text" style="position: relative; background-color: transparent; width: 48%;" class="border rounded py-1 px-2 form-sdt" placeholder="Số điện thoại">
+                                <span class="text-danger d-block w-100"></span>
+                            </div>
+                            <p class="fs-14px my-2">CHỌN CÁCH THỨC NHẬN HÀNG</p>
+                            <div class="form-group mt-1 mb-2">
+                                <input type="radio" id="tmp1" name="2" checked>
+                                <label for="tmp1" class="fs-14px me-3">Giao tận nơi</label>
+                                <input type="radio" id="tmp2" name="2">
+                                <label for="tmp2" class="fs-14px">Chọn tại siêu thị</label>
+                            </div>
+                            <div class="form-group input-box" style="position: relative;">
+                                <input type="text" style="position: relative; background-color: transparent" class="border rounded py-1 px-2 w-100" placeholder="Mô tả">
+                            </div>
+                            <div class="form-group my-2">
+                                <input type="checkbox" id="tmp3" name="2">
+                                <label for="tmp3" class="fs-14px me-3">Gọi người khách nhận hàng (nếu có)</label>
+                                <br>
+                                <input type="checkbox" id="tmp4" name="2">
+                                <label for="tmp4" class="fs-14px">Hướng dẫn sử dụng, giải đáp thắc mắc</label>
+                                <br>
+                                <input type="checkbox" id="tmp5" name="2">
+                                <label for="tmp5" class="fs-14px">Xuất hóa đơn công ty</label>
+                            </div>
+                        </div>
+                        <div class="order-third py-3 px-4">
+                            <div class="form-group dropdown d-flex align-items-center">
+                                <i><img src="../data/gift-solid.svg" alt="" class="me-2" style="height: 30px; width: 20px;"></i>
+                                <select name="" id="" class="select-form px-2">
+                                    <option value="" disabled selected>Sử dụng mã giảm giá</option>
+                                    <option value="">Freeship 25%</option>
+                                    <option value="">Freeship 50%</option>
+                                    <option value="">Freeship 75%</option>
+                                    <option value="">Freeship 100%</option>
+                                </select>
+                            </div>
+                            <div class="form-group d-flex justify-content-between py-3">
+                                <p class="fw-bold">Tổng tiền:</p>
+                                <p class="order-total-due text-danger">0₫</p>
+                            </div>
+                            <div class="form-group d-flex justify-content-between py-3">
+                                <p>Điểm tích lũy Quà Tặng VIP:</p>
+                                <p>16.980 điểm</p>
+                            </div>
+                            <div class="form-group">
+                                <input type="checkbox" id="tmpAgree" name="2">
+                                <label for="tmpAgree" class="fs-14px">Tôi đồng ý với <a href="#" class="text-decoration-none">Chính sách xử lý dữ liệu cá nhân</a> của Thế Giới Di Động</label>
+                                <span class="text-danger w-100 d-block"></span>
+                                <br>
+                                <button type="submit" class="btn btn-dark w-100 my-3 py-2 border-0" style="background: #000">Đặt hàng</button>
+                                <p class="text-center" style="font-size: 16px;">Anh có thể chọn hình thức thanh toán sau khi đặt hàng</p>
+                            </div>
+                        </div>
+                    </form>
+                    
+                </div>
+
+            </div>
+        </article>
+        <div class="row mt-3">
+            <button id="back-to-top-btn" class="btn btn-dark" style="border-radius: 0;">Trở lại đầu trang</button>
+        </div>
+        <footer>
+            <div class="wrap-footer container mt-4">
+                <div class="row mt-3 ">
+                    <!-- Chính sách bảo hành  -->
+                    <div class="col-lg-3 col-md-4 col-xs-6">
+                        <div class="footer-list-info">
+                            <h5 class="footer__title">Thông tin chính sách</h5>
+                            <div class="footer__wrap-list-info">
+                                <ul class="footer-list-items">
+                                    <li class="footer__item">
+                                        <a href="" class="footer__link-item">
+                                            Chính sách bảo hành
+                                        </a>
+                                    </li>
+                                    <li class="footer__item">
+                                        <a href="" class="footer__link-item">
+                                            Chính sách bán hàng
+                                        </a>
+                                    </li>
+                                    <li class="footer__item">
+                                        <a href="" class="footer__link-item">
+                                            Chính sách bảo mật
+                                        </a>
+                                    </li>
+                                    <li class="footer__item">
+                                        <a href="" class="footer__link-item">
+                                            Chính sách giao hàng
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+    
+                        </div>
+                    </div>
+    
+                    <!-- Tổng đài  -->
+                    <div class="col-lg-3 col-md-4 col-xs-6">
+                        <div class="footer-list-info">
+                            <h5 class="footer__title">Tổng đài hỗ trợ</h5>
+                            <div class="footer__wrap-list-info">
+                                <ul class="footer-list-items">
+                                    <li class="footer__item">
+                                        <span class="text-white">Gọi mua hàng:</span>
+                                        <a href="tel:037658562" class="footer__link-item text-primary">
+                                            037658562
+                                        </a>
+                                    </li>
+                                    <li class="footer__item">
+                                        <span class="text-white">CSKH:</span>
+                                        <a href="" class="footer__link-item text-primary">
+                                            03333456767
+                                        </a>
+                                    </li>
+                                    <li class="footer__item">
+                                        <span class="text-white">Email:</span>
+                                        <a href="mailto:vodangkhoa270904@gmail.com"
+                                            class="footer__link-item text-primary">
+                                            vodangkhoa270904@gmail.com
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+    
+                        </div>
+                    </div>
+    
+                    <div class="col-lg-3 col-md-4 col-xs-6">
+                        <div class="footer-list-info">
+                            <h5 class="footer__title">Thông tin</h5>
+                            <div class="footer__wrap-list-info">
+                                <ul class="footer-list-items">
+                                    <li class="footer__item">
+                                        <a href="" class="footer__link-item">
+                                            Hệ thống cửa hàng
+                                        </a>
+                                    </li>
+                                    <li class="footer__item">
+                                        <a href="" class="footer__link-item">
+                                            Trung tâm bảo hành
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+    
+                        </div>
+                    </div>
+    
+                    <div class="col-lg-3 col-md-4 col-xs-6">
+                        <div class="footer-list-info">
+                            <h5 class="footer__title">Hình thức thanh toán</h5>
+                            <div class="footer__wrap-list-info">
+                                <ul class="footer-list-items">
+                                    <div class="row mb-1">
+                                        <div class="col-3">
+                                            <li class="footer__item">
+                                                <img src="../img/pay_1.webp" alt="" class="footer__img-item">
+                                            </li>
+                                        </div>
+                                        <div class="col-3">
+                                            <li class="footer__item">
+                                                <img src="../img/pay_2.webp" alt="" class="footer__img-item">
+                                            </li>
+                                        </div>
+                                        <div class="col-3">
+                                            <li class="footer__item">
+                                                <img src="../img/pay_3.webp" alt="" class="footer__img-item">
+                                            </li>
+                                        </div>
+                                        <div class="col-3">
+                                            <li class="footer__item">
+                                                <img src="../img/pay_4.webp" alt="" class="footer__img-item">
+                                            </li>
+                                        </div>
+    
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <li class="footer__item">
+                                                <img src="../img/pay_5.webp" alt="" class="footer__img-item">
+                                            </li>
+                                        </div>
+                                        <div class="col-3">
+                                            <li class="footer__item">
+                                                <img src="../img/pay_6.webp" alt="" class="footer__img-item">
+                                            </li>
+                                        </div>
+                                        <div class="col-3">
+                                            <li class="footer__item">
+                                                <img src="../img/pay_7.webp" alt="" class="footer__img-item">
+                                            </li>
+                                        </div>
+                                        <div class="col-3">
+                                            <li class="footer__item">
+                                                <!-- <img src="../img/pay_8.webp" alt="" class="footer__img-item"> -->
+                                            </li>
+                                        </div>
+                                    </div>
+                                </ul>
+                            </div>
+    
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-3" style="border-top: 1px solid #c3c3c3;">
+                    <div class="footer__wrap-media text-center">
+                        <a href="" class="footer__wrap-link-media">
+                            <i class="footer__icon-media fa-brands fa-facebook"></i>
+                        </a>
+                        <a href="" class="footer__wrap-link-media">
+                            <i class="footer__icon-media fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="" class="footer__wrap-link-media">
+                            <i class="footer__icon-media fa-brands fa-telegram"></i>
+                        </a>
+                        <a href="" class="footer__wrap-link-media">
+                            <i class="footer__icon-media fa-brands fa-twitter"></i>
+                        </a>
+                    </div>
+                    <div style="font-size: 14px;" class="footer__address text-white text-center">
+                        <p>Chịu Trách Nhiệm Quản Lý Nội Dung: Võ Đăng Khoa - Điện thoại liên hệ: 0388858854</p>
+                        <p style="font-style: italic;">Địa chỉ 320 Nguyễn Đình Chiểu,Thị Trấn Thanh Bình,Huyện Bù Đốp,Tỉnh Bình Phước</p>
+                        <p>© 2024 - Bản quyền thuộc về 4HKG</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <a href="https://chat.zalo.me/0376581562" class="btn__hotline-zalo">
+        <img class="btn__img-zalo" src="../img/icon-zalo.webp" alt="">
+    </a>
+    
+    <script>
+        // Smooth scroll to the top of the page when the button is clicked
+        document.getElementById('back-to-top-btn').addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+    </script>
+    <script src="../js/search.js"></script>
+    <script src="../js/script.js"></script>
+    <script src="../js/dathang.js"></script>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+
+.card-body {
+    background-color: #000;
+    padding: 20px 10px;
+    color: #fff;
+    border-radius: 26px;
+}
+
+.wrap__login-icon > a {
+    text-decoration: none;
+    color: #000;
+    padding: 5px;
+}
+
+.wrap__login-icon > a:hover > i {
+    font-size: 28px;
+    opacity: 1;
+}
+
+.wrap__login-icon > a > i {
+    font-size: 26px;
+    opacity: 0.7;
+}
+.card-body__ul > li:hover > a.nav-link {
+    background-color: unset;
+    border-bottom: 2px solid #000;
+}
+
+
+.form-control:focus {
+    border-color: #000 !important;
+}
+
+.form-login > div > input, .form-signup > div > input{
+    height: 50px;
+    width: 80%;
+}
+.form-outline {
+    display: flex;
+    justify-content: center ;
+}

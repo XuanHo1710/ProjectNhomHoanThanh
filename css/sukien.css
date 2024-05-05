@@ -1,0 +1,41 @@
+#event-top{
+    margin-top: 61px;
+}
+
+#event-titel{
+    margin-top: 20px;
+    margin-left: 0px;
+}
+.card-body a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    border-bottom: 4px solid #25d5d9;
+}
+
+.card-body a:hover{
+    border-bottom: 4px solid black;
+}
+
+.card{
+    border: none;
+    transition: scale 1s;
+}
+.card a img{
+    border-radius: 0px;
+}
+
+.card:hover {
+    box-shadow: 0 0 10px #cecece;
+    z-index: 1;
+    transform: scale(1.1);
+}
+
+.card > a:hover > img {
+    opacity: 0.8;
+    
+}
+
+#btn_more{
+    width: 150px;
+}

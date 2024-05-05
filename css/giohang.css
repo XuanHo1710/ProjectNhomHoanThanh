@@ -1,0 +1,80 @@
+
+.wrap__icon-item > p {
+    font-size: 12px;
+    margin: 0 10px;
+}
+
+.block__item-cart {
+    display: flex ;
+    align-items: center;
+    box-shadow: 0 0 2px 1px #dadada;
+    margin: 26px 0;
+}
+
+.block__subToltal-gioHang {
+    background-color: #fff;
+    position: absolute;
+    max-width: 730px;
+    width: 100%;
+    bottom: -48px;
+    left: 50%;
+    right: 50%;
+    box-shadow: 0 0 3px 1px #dadada;
+    transform: translateX(-50%);
+}
+
+.wrap__list-item-cart::-webkit-scrollbar {
+    display: none;
+}
+
+/* phần giỏ hàng  */
+.item__info-cart {
+    text-decoration: none;
+    color: #000;
+}
+
+.block__grow-cart {
+    width: 30%;
+    border: 1px solid #d0d0d0;
+    border-radius: 3px;
+}
+
+.block__grow {
+    height: 30px;
+}
+
+.block__grow > span:first-child {
+    border-right: 1px solid #d0d0d0;
+}
+
+.block__grow > span:last-child {
+    border-left: 1px solid #d0d0d0;
+}
+
+.block__grow > span {
+    display: block;
+    height: 100%;
+    width: 36px;
+    font-size: 24px;
+    line-height: 30px;
+    text-align: center;
+    cursor: pointer;
+}
+
+input.block__input-grow {
+    outline: none;
+    border: 0;
+    text-align: center;
+    width: 40%;
+}
+
+.p_price-sales {
+    text-decoration: line-through;
+    margin-left: 10px;
+    font-size: 14px;
+    color: #a3a3a3;
+}
+
+.fa-trash {
+    cursor: pointer;
+}
